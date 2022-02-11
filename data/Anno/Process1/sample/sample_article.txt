@@ -1,0 +1,9 @@
+
+3 Process Model
+The reaction rates of components A and B are represented by as follows:
+MATH_0002=MATH_0003⁢exp⁡(-MATH_0000MATH_0007⁢MATH_0004),
+(1)
+MATH_0005=MATH_0006⁢exp⁡(-MATH_0001MATH_0007⁢MATH_0004),
+(2)
+where MATH_0004 denotes reactor temperature.
+MATH_0003 and MATH_0006 denote frequency factors of components A and B, and MATH_0000 and MATH_0001 are activation energies for components A and B, respectively.

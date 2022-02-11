@@ -1,0 +1,8 @@
+.python-version
+.DS_Store
+.vscode/
+__pycache__/
+.idea/
+*.prop
+*.props
+*.pkl
