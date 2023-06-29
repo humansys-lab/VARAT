@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "varat"
+version = "0.1.0"
+description = ""
+authors = ["stktu <34226464+stktu@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.9.7 || >3.9.7,<4.0"
+pandas = "1.5.2"
+streamlit = "1.15.2"
+stanza = "1.3.0"
+lxml = "4.9.1"
+cssselect = "1.2.0"
+openpyxl = "3.1.2"
+altair = "4.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.4.1"
+flake8 = "^6.0.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
