@@ -2,14 +2,20 @@
 
 ## System requirements
 
-* Python 3 (3.9.7 or later)
+* Python 3 (3.9 or later except for 3.9.7)
+  * because streamlit (1.15.2) requires Python >=3.7, !=3.9.7
 * Preferred: A Web Browser with MathML support
   * [Firefox](https://www.mozilla.org/firefox/) is recommended.
 
 ## Installation
 
-The dependencies related to python library will be installed with one shot:
+The dependencies related to python library will be installed with one shot using [Poetry](https://github.com/python-poetry/poetry):
 
+```shell
+poetry install --no-dev
+```
+
+You can also use `pip` and `requirements.txt`.
 ```shell
 python -m pip install -r requirements.txt
 ```
@@ -27,28 +33,21 @@ streamlit run streamlit_annotation.py
 ```
 
 
-## Project structure
-
-### Files in this repository
+## Files in this repository
 
 * `lib/` contains the project library.
 * `tools/` contains our utility Python scripts.
 
-### Files not in this repository
-
-The annotation data is not included in this repository due to several constraints.
+All of the annotation data is not included in this repository due to several constraints.
 
 * `data/Anno` contains folders whose names are processes' names.
 * `data/Anno/[Process name]` contains folders whose names indicate papers' authors and publication year.
   * Each folder contains the original documents (.tex), the annotation data (.xlsx), and the preprocessed docuemnts (.html and .txt).
+  * `doi_list.csv` lists the authors, titles and DOIs of the papers used for annotation.
 
 
 ## License
 
-Copyright 2022 Shota KATO
+Copyright 2023 Shota KATO
 
 This software is licenced under [the MIT license](./LICENSE).
-
----
-
-Shota KATO
