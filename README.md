@@ -42,7 +42,7 @@ All of the annotation data is not included in this repository due to several con
 
 * `data/Anno` contains folders whose names are processes' names.
 * `data/Anno/[Process name]` contains folders whose names indicate papers' authors and publication year.
-  * Each folder contains the original documents (.tex), the annotation data (.xlsx), and the preprocessed docuemnts (.html and .txt).
+  * Each folder contains the original documents (.tex), the annotation data (.xlsx), and the preprocessed docuemnts (.html and .txt). The tex files were manually created to reproduce the papers in PDF format.
   * `doi_list.csv` lists the authors, titles and DOIs of the papers used for annotation.
 
 
