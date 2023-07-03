@@ -5,9 +5,9 @@ from typing import List
 @dataclass
 class Sentence:
     id: int = 0
-    original: str = ''
-    tagged: str = ''
-    replaced: str = ''
+    original: str = ""
+    tagged: str = ""
+    replaced: str = ""
 
 
 @dataclass
@@ -23,8 +23,8 @@ class Candidate:
 
 @dataclass
 class Identifier:
-    text_tex: str = ''
-    text_html: str = ''
+    text_tex: str = ""
+    text_html: str = ""
     mi_list: List[str] = field(default_factory=list)
     id: int = -1
     sentences: List[Sentence] = field(default_factory=list)
@@ -33,7 +33,7 @@ class Identifier:
 
 @dataclass
 class Formulae:
-    text_replaced: str = ''
-    text_tex: str = ''
+    text_replaced: str = ""
+    text_tex: str = ""
     identifiers: List[Identifier] = field(default_factory=list)
     replaced_string_list: List[tuple] = field(default_factory=list)
